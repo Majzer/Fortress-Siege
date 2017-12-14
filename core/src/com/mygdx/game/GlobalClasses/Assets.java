@@ -118,6 +118,12 @@ public class Assets {
 	public static final AssetDescriptor<Texture> CLOUD_TEXTURE
 			= new AssetDescriptor<Texture>("actorok/cloud.png", Texture.class);
 
+	public static final AssetDescriptor<Texture> OSEMBER_TEXTURE
+			= new AssetDescriptor<Texture>("actorok/Osember_01.png", Texture.class);
+
+	public static final AssetDescriptor<Texture> FLOPPY_TEXTURE
+			= new AssetDescriptor<Texture>("actorok/floppy.png", Texture.class);
+
 	//Vár texturák
 	public static final AssetDescriptor<Texture> CASTLE_TOP_TEXTURE
 			= new AssetDescriptor<Texture>("var/castle_dark_top.png", Texture.class);
@@ -224,6 +230,8 @@ public class Assets {
 		manager.load(TENT_TOP_TEXTURE);
 		manager.load(CLOUD_TEXTURE);
 		manager.load(CANNON_TOP_TEXTURE);
+		manager.load(OSEMBER_TEXTURE);
+		manager.load(FLOPPY_TEXTURE);
 
 		//Vár texturái
 		manager.load(CASTLE_TOP_TEXTURE);

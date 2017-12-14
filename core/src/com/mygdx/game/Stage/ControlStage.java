@@ -126,7 +126,7 @@ public class ControlStage extends MyStage {
                     gameStage.removeCoin(25);
                     lblCoin.setText(gameStage.getCoin()+" gold");
                 } else if(gameStage.getCoin()<25){
-                    lblError.setText("Not enough gold! 25 gold needed, to restore health!");
+                    lblError.setText("Nokt enough gold! 25 gold needed, to restore health!");
                     ido=System.currentTimeMillis();
 
                 }   else if(gameStage.getLife()>850.0) {
