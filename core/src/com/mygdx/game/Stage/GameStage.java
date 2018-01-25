@@ -87,8 +87,7 @@ public class GameStage extends MyStage {
 
     public void addPoint(int point){
         this.point+=point;
-        setLblPoint(point+" point");
-        setLblCoin(coin+" gold");
+        setLblPoint();
     }
 
     public int getCoin() {
@@ -97,12 +96,15 @@ public class GameStage extends MyStage {
 
     public int removeCoin(int coinminus){
         coin-=coinminus;
-        setLblCoin(coin+" gold");
+        setLblCoin();
         System.out.println(coin);
         return coin;
     }
 
-    public void addCoin(int coin){this.coin+=coin;}
+    public void addCoin(int coin){
+        this.coin+=coin;
+        setLblCoin();
+    }
 
     public void setTimeScale(float timeScale) {
         this.timeScale = timeScale;
@@ -367,11 +369,11 @@ public class GameStage extends MyStage {
         return style;
     }
 
-    public void setLblCoin(String s){
+    public void setLblCoin(){
         controlStage.setLblCoin(coin+" gold");
     }
 
-    public void setLblPoint(String s){
+    public void setLblPoint(){
         controlStage.setLblPoint(point+"/7500 point");
     }
 
